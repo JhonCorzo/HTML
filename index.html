@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>prueba de todas la etiquetas</title>
+	</head>
+	<body>
+
+<!-- Zona de una pagina, articulo en una pagina -->
+
+	<article>
+
+  <h2>Google Chrome</h2>
+  <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+<br>
+
+<!-- Contenido aparte de la pagina (lado derecho de la pagina)-->
+<aside>
+  <h4>Epcot Center</h4>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+<br>
+
+<!-- Colocar audios en la pagina web -->
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<br>
+
+<!-- bdi Muestra texto que el navegador no soporta como palabras de otro idioma-->
+<ul>
+ <li>User <bdi>hrefs</bdi>: 60 points</li>
+ <li>User <bdi>jdoe</bdi>: 80 points</li>
+ <li>User <bdi>إيان</bdi>: 90 points</li>
+</ul>
+<br>
+
+<!-- dibujar un cuadro con javascrip -->
+<canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#556666";
+ctx.fillRect(5, 0, 80, 100);
+</script>
+<br>
+
+<!-- en una caja de texto tengo un menu desplegable de opciones dentro de un formulario -->
+<form action="/action_page.php" method="get">
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+<br>
+
+<!-- con click puedo ver los detaller de Epocot Center -->
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+<br>
+
+<!-- barra de procesos hasta el valor value -->
+<label for="file">File progress:</label>
+<progress id="file" max="100" value="40"> 70% </progress>
+<br>
+
+<!-- Utilice un elemento <figure> para marcar una foto en un documento y un elemento <figcaption> para definir un título para la foto -->
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+<br>
+
+<!-- Pie de pagina del documento, al final del documento -->
+<footer>
+  <p>Author: Hege Refsnes<br>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+<br>
+
+
+<!-- Arriba de la pagina, Encabezado de la pagina, cualquier encabezado -->
+<header>
+    <h1>A heading here</h1>
+    <p>Posted by John Doe</p>
+    <p>Some additional information here</p>
+  </header>
+  <br>
+
+
+<!-- Hacer un menu desplegable con grupos definidos -->
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+
+
+<!-- Resaltar partes de un texto -->
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+<br>
+
+
+<!-- OJO REVISAR BIEN SU FUNCIONAMIENTO Utilice el elemento meter para medir datos dentro de un rango determinado (un medidor): -->
+<label for="disk_c">Disk usage C:</label>
+<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+<label for="disk_d">Disk usage D:</label>
+<meter id="disk_d" value="0.6">60%</meter>
+<br>
+
+<!-- Enlaces a paginas de navegacion -->
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/python/">Python</a>
+</nav>
+<br>
+
+<!-- no lo entendi muy bien pero esta coqueto, es una barra que se suma con un valor de una caja de texto -->
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="range" id="a" value="50">+<input type="number" id="b" value="25">=<output name="x" for="a b"></output>
+</form>
+<br>
+
+<!-- secciones diferentes de una pagina -->
+<section>
+<h2>WWF History</h2>
+<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+<section>
+<h2>WWF's Symbol</h2>
+<p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+<br>
+
+
+<!-- Colocar audio y video -->
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<br>
+
+
+<!-- Hacer un menu desplegable coqueto -->
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+<br>
+
+<!-- crear un enlace a un sitio web -->
+<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+<br>
+
+<!-- coqueto, muestra una abreviatura y si uno pasa el mouse muestra la palabra completa -->
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<br>
+
+<!-- informacion de contacto de una pagina web -->
+<address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+<br>
+
+<!-- Vacanisimo en una imagen le colocan cordenadas y se le puede dar click en una parte de la imagen para que redireccione a una pagina web -->
+<h1>The map and area elements</h1>
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+<br>
+
+<!-- Ponga un texto en negrita (sin marcarlo como importante) -->
+<p>This is normal text - <b>and this is bold text</b>.</p>
+<br>
+
+
+<!-- se coloca en el head la etiqueta base donde va a redireccionar todos los enlaces a esa pagina-->
+<head>
+  <base href="https://www.w3schools.com/" target="_blank">
+</head>
+<br>
+
+<!-- boton -->
+<button type="button" onclick="alert('Hello world!')">Click Me!</button>
+<br>
+
+<!-- crear una tabla -->
+<table>
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+<br>
+
+<!-- Defina algún texto como código informático en un documento -->
+<p>The HTML <code>button</code> tag defines a clickable button.</p>
+<p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+
+	</body>
+	</html>	
