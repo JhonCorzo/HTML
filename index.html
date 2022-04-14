@@ -308,7 +308,200 @@ USA
 <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
 <br>
 
+<!-- Se puede colocar una pagina dentro de otra pagina -->
+<iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials">
+</iframe>
+<br>
 
+<!-- Colocar imagenes -->
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+<br>
+
+<!-- coqueto, tacha un texto y deja otro-->
+<p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+<br>
+
+<!-- cambia el estilo de la letra -->
+<p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
+<br>
+
+<p>OJO buscar mas type</p>
+<!-- Seleccion de casillas -->
+<form action="/action_page.php">
+  <p>Please select your favorite Web language:</p>
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+ <label for="javascript">JavaScript</label>
+
+  <br>  
+
+  <p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="100">
+  <label for="age3">61 - 100</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+
+<p>Listado de type input</p>
+<br>
+<!-- Seleccion de casillas -->
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+<!-- Tambien se puede colocar emails y se separa los correos electronicos con una coma -->
+<form action="/action_page.php">
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+  <input type="submit">
+</form>
+<br>
+<!-- Subir archivos -->
+<h3>Show a file-select field which allows only one file to be chosen:</h3>
+<form action="/action_page.php">
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  <input type="submit">
+</form>
+<br>
+<h3>Show a file-select field which allows multiple files:</h3>
+<form action="/action_page.php">
+  <label for="myfile">Select files:</label>
+  <input type="file" id="myfile" name="myfile" multiple><br><br>
+  <input type="submit">
+</form>
+<br>
+<!-- Coqueto se puede colocar un rango para seleccionar un numero -->
+<form action="/action_page.php">
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+  <input type="submit">
+</form>
+<br>
+<!-- Contraseña -->
+<form action="/action_page.php">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+  <input type="submit">
+</form>
+<br>
+<!-- barra con valor -->
+<form action="/action_page.php">
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+  <input type="submit">
+</form>
+<br>
+<!-- Buscar -->
+<form action="/action_page.php">
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+  <input type="submit">
+</form>
+<br>
+<!-- Telefono -->
+<form action="/action_page.php">
+  <label for="phone">Enter a phone number:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+  <small>Format: 123-45-678</small><br><br>
+  <input type="submit">
+</form>
+<br>
+<!-- url -->
+<form action="/action_page.php">
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage"><br><br>
+  <input type="submit">
+</form>
+<br>
+<!-- Menu desplegable -->
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+<!-- caja de texto -->
+<form action="/action_page.php">
+<label for="w3review">Review of W3Schools:</label>
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+  </textarea>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+<!-- Datos de la pagina, quien la creo, etc -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<br>
+<!-- Incrustar pagina web -->
+<object data="snippet.html" width="500" height="200"></object>
+<br>
+<!-- si se incrusta un video con objeto se puede colocar a auto reproducir un video con param-->
+<object data="horse.wav">
+<param name="autoplay" value="true">
+</object>
+<br>
+<!-- Texto con un formato diferente -->
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre>
+<br>
+<!-- Colocar comillas a un texto -->
+<p>WWF's goal is to: 
+<q>Build a future where people live in harmony with nature.</q>
+We hope they succeed.</p>
+<br>
+<!-- Colocar un texto de un programa -->
+<p>Message from my computer:</p>
+<p><samp>File not found.<br>Press F1 to continue</samp></p>
+<br>
+<!-- Un texto mas pequeño -->
+<p>This is some normal text.</p>
+<p><small>This is some smaller text.</small></p>
+<br>
+
+<!-- colocar color a la letra -->
+<p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
+<br>
+<!-- colocar negrita a un texto -->
+<strong>This text is important!</strong>
+<br>
+<!-- coloca en un texto un subindice -->
+<p>This text contains <sub>subscript</sub> text.</p>
+<p>This text contains <sup>superscript</sup> text.</p>
+<br>
 
 
 
